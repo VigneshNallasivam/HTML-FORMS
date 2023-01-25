@@ -36,3 +36,16 @@ function mobileNumber() {
         alert("Validated Successfully..!!");
     }
 }
+
+function password() {
+    let pattern = new RegExp('^[A-Za-z0-9@#$%&]{8}$');
+    let input = document.getElementById("Password").value;
+    let status = pattern.test(input);
+    if (status==false) {
+        alert("Invalid Password, Enter atleast 8 Characters with Special Symbols");
+    }
+    else
+    {
+        alert("Validated Successfully..!!");
+    }
+}
