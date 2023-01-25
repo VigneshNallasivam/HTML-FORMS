@@ -23,3 +23,16 @@ function email() {
         alert("Validated Successfully..!!");
     }
 }
+
+function mobileNumber() {
+    let pattern = new RegExp('^[0-9]{10}$');
+    let input = document.getElementById("MobileNumber").value;
+    let status = pattern.test(input);
+    if (status==false) {
+        alert("Invalid mobile number,Check your Mobile Number");
+    }
+    else
+    {
+        alert("Validated Successfully..!!");
+    }
+}
